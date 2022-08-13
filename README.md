@@ -4,4 +4,4 @@ Kodi support from [inputstream.ffmpegdirect](https://github.com/xbmc/inputstream
 
 This is RPM package published on RPMFusion for Kodi.
 
-Preview packages can be found in [Releases](https://github.com/avibrazil/kodi-imagedecoder-heif/releases)
+Preview packages can be found in [Releases](https://github.com/avibrazil/kodi-inputstream-ffmpegdirect/releases)
