@@ -4,8 +4,8 @@
 
 Name:           kodi-inputstream-ffmpegdirect
 Version:        19.0.3
-Release:        2%{?dist}
-Summary:        Kodi input stream addon for streams that can be opened by either FFmpeg's libavformat or Kodi's cURL
+Release:        4%{?dist}
+Summary:        Open streams with FFmpeg or Kodi’s cURL
 License:        GPLv2+
 URL:            https://github.com/xbmc/inputstream.ffmpegdirect
 Source0:        %{url}/archive/%{version}-%{kodi_codename}/%{aname}-%{version}-%{kodi_codename}.tar.gz
@@ -30,8 +30,8 @@ Requires:       kodi >= %{kodi_version}
 ExcludeArch:    %{power64}
 
 %description
-%{summary}.
-
+Kodi input stream addon for streams that can be opened
+by either FFmpeg's libavformat or Kodi's cURL
 
 %prep
 %setup -q -n %{aname}-%{version}-%{kodi_codename}
@@ -63,5 +63,5 @@ find $RPM_BUILD_ROOT%{_datadir}/kodi/addons/ -type f -exec chmod 0644 {} \;
 
 
 %changelog
-* Sat Aug 13 2022 Avi Alkalay <avi@unix.sh> - 19.0.3-1
+* Sat Aug 13 2022 Avi Alkalay <avi@unix.sh> - 19.0.3-4
 - First build attempt on Fedora 36
